@@ -22,8 +22,24 @@
       "openclaw/plugin-sdk": ["./src/plugin-sdk/index.ts"],
       "openclaw/plugin-sdk/*": ["./src/plugin-sdk/*.ts"],
       "openclaw/plugin-sdk/account-id": ["./src/plugin-sdk/account-id.ts"]
-    }
+    },
+    "allowJs": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["src/**/*", "ui/**/*", "extensions/**/*"],
+  "include": [
+    "src/**/*",
+    "ui/**/*",
+    "extensions/**/*",
+    "app/**/*",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": ["node_modules", "dist", "src/**/*.test.ts", "extensions/**/*.test.ts"]
 }
