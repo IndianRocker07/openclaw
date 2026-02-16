@@ -2,6 +2,8 @@
 
 This directory contains the Next.js-based web interface for OpenClaw, providing a modern React-based UI for the AI gateway.
 
+> **Note**: This project supports both npm and pnpm. All commands below are shown with both package managers. Use whichever you prefer or have installed on your system.
+
 ## Structure
 
 ```
@@ -34,6 +36,10 @@ app/
 Start the development server:
 
 ```bash
+# Using npm
+npm run next:dev
+
+# Using pnpm
 pnpm next:dev
 ```
 
@@ -44,12 +50,20 @@ The application will be available at http://localhost:3000
 Build the production application:
 
 ```bash
+# Using npm
+npm run next:build
+
+# Using pnpm
 pnpm next:build
 ```
 
 Start the production server:
 
 ```bash
+# Using npm
+npm run next:start
+
+# Using pnpm
 pnpm next:start
 ```
 
